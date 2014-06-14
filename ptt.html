@@ -1,0 +1,55 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>PTT文章搜尋器</title>
+</head>
+<body>
+
+<div>
+請輸入關鍵字，搜尋PTT各看板文章。
+</div>
+
+
+
+<div id="cse" style="width: 100%;">Loading</div>
+<script src="http://www.google.com.tw/jsapi" type="text/javascript"></script>
+<script type="text/javascript"> 
+  google.load('search', '1', {language : 'zh-TW', style : google.loader.themes.V2_DEFAULT});
+  google.setOnLoadCallback(function() {
+    var customSearchOptions = {};  var customSearchControl = new google.search.CustomSearchControl(
+      '017304149740989999389:jghrk1s-zb4', customSearchOptions);
+    customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+    customSearchControl.draw('cse');
+  }, true);
+</script>
+<br /><br />
+<div>
+新版搜尋使用Google自訂搜尋，更強大、更好用、囊括更多看板，但也更容易侵犯個人隱私。<br />
+我們從6/21開始實驗一個月，觀察大家接受度，再決定是否繼續提供這個功能。<br />
+希望大家尊重他人，不要用來做人肉搜索，謝謝。
+</div>
+
+<!--
+  <script type="text/javascript" src="http://tw.js.webmaster.yahoo.com/466849/ystat.js"></script><noscript><a href="http://tw.webmaster.yahoo.com"><img src=http://tw.img.webmaster.yahoo.com/466849/ystats.gif></a></noscript>  -->
+    
+
+<!--
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2043510-7']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>   -->
+
+
+</body>
+</html>
